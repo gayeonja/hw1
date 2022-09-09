@@ -19,4 +19,6 @@ struct Node
 
 void split(Node*& in, Node*& odds, Node*& evens);
 // WRITE YOUR CODE HERE
+void isOdd(Node*& in, Node*& odds); 
+void isEven(Node*& in, Node*& evens); 
 #endif
