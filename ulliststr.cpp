@@ -179,8 +179,8 @@ std::string* ULListStr::getValAtLoc(size_t loc) const{
   std::string* ptr; 
 
   // loop through 
-  for ( int i = 0; i <= loc; i++ ){
-    if ( inValCount == where->last){
+  for ( unsigned int i = 0; i <= loc; i++ ){
+    if ( inValCount == (int) where->last){
       // at end of array 
       if ( where->next == NULL ){
         return NULL; 
@@ -197,6 +197,7 @@ std::string* ULListStr::getValAtLoc(size_t loc) const{
       inValCount++; 
     }
   }
+  return NULL; 
 }
 
 void ULListStr::set(size_t loc, const std::string& val)
